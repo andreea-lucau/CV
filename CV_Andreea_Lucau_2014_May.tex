@@ -1,0 +1,156 @@
+%%
+%% This is file `cvtest.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% currvita.dtx  (with options: `testfile')
+%% 
+%% LaTeX sample file for the currvita package
+%% 
+%% Copyright (C) 1999 Axel Reichert
+%% See the files README and COPYING.
+%% 
+%% \CharacterTable
+%%   {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage{currvita}
+\usepackage[a4paper,top=2cm,left=2cm,right=2cm,bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+
+\newcommand*{\ac}[1]{\mbox{#1}}
+
+\AtBeginDocument{%
+    \settowidth{\cvlabelwidth}{Jan 8888 -- Feb 8888}%
+}
+
+\usepackage[colorlinks,plainpages=false,linkcolor=black,citecolor=black,filecolor=black,urlcolor=blue]{hyperref}
+\def\pdfBorderAttrs{/Border [0 0 0] } % No border around Links
+
+\begin{document}
+
+\begin{center}
+    \Huge
+    \textbf{Andreea Lucau}
+    \vspace{1em}
+\end{center}
+
+\begin{cv}{}
+    \begin{cvlist}{Personal Information}
+    \item[Date of Birth]	25 July 1986
+    \item[Nationality]	Romanian
+    \item[Address]
+        62, The Links, Elmpark, \\
+        Dublin 4, Dublin\\
+        Ireland
+    \item[Tel.]	+353 860 421 760
+    \item[Email]		andreea.lucau@gmail.com
+    \end{cvlist}
+
+    \begin{cvlist}{Work Experience}
+    \item[April 2013 -- present]
+        \textbf{Software Engineer} at Amazon Data Services Ireland.
+
+        I worked in the Network System Engineers team on projects that aim to automate various parts of the network. I work in Python.
+
+    \item[March 2010 -- March 2013]
+        \textbf{Senior Software Engineer} at IXIA Romania. (\href{http://www.ixiacom.com/}{www.ixiacom.com})
+
+        I worked with layer 2-3 protocols implementations on a custom Linux platform used for simulating real-life networks. The purpose was to test high power routers and switches. I’ve worked on:
+        \begin{enumerate}
+            \item fixing bugs for DHCP(both client and server, IPv4 and IPv6) and add multithread support for DHCP
+            \item developping a IGMP client
+            \item implementing DCBX 802.1 Qaz standard
+            \item adding multihread support for FCoE client
+            \item designing a VEPA emulation and developping the code for the VDP protocol
+            \item migrating the FCoE forwarder emulation to a native fiber chanel encapsulation
+        \end{enumerate}
+        I was responsible with scoping and writing functional specifications for my projects, taking into account customer’s need. I’ve worked with the following architectures: Power PC, Intel i686, Intel x86-64, Octeon.
+
+    \item[July 2009 -- Feb 2010]
+        \textbf{C Software Engineer} at Jinny Software (\href{http://www.jinnysoftware.com/}{www.jinnysoftware.com})
+
+        I’ve worked on the server side of a web application destined to register and configure mobile advertising campaigns. Amongs my tasks were:
+        \begin{enumerate}
+            \item developing a task scheduling engine for processing database records
+            \item implementing database procedures
+            \item ensuring scalability and accuracy
+        \end{enumerate}
+        I’ve worked with C, MySql and Apache.
+
+    \item[July 2007 -- Sep 2009]
+        \textbf{C Software Engineer} at EvoSoftware
+
+        I’ve worked on image processing algorithms for scanned documents. I’ve developed algorithms for barcode detection, line removal and color recognition.
+        I've worked with C++ and C\#.
+    \end{cvlist}
+
+    \pagebreak
+
+    \begin{cvlist}{Personal Projects}
+    \item[GitHub]
+        I’ve developed a small PGP encryption client, that was supposed to compress a file, search for public keys on a PGP server, download the key and use it to encrypt the file. I’ve used gnupg, gpgme, libz, curl.
+        I’ve added management capabilities for the open-source VPN solution OpenVPN for my graduation project.
+        Here is my GitHub page: \href{https://github.com/andreea-lucau?tab=repositories}{GitHub}.
+    \end{cvlist}
+
+    \begin{cvlist}{Prizes, Awards, Certificates}
+    \item[2008]
+        Cisco \textbf{CCNA} for module 1.
+
+    \item[2004]
+        3$^{th}$ place at National Physics Contest ”Stefan Procopiu” Constanta
+
+    \item[2002]
+        3$^{th}$ place at National Physics Contest ”Stefan Procopiu” Constanta
+    \end{cvlist}
+
+    \begin{cvlist}{Education}
+    \item[Sep 2005 – June 2009]
+        \textbf{``Politehnica" University of Bucharest}, Bucharest, Romania\\
+        Automation and Computer Science, Computer Science Dept.
+
+        I took the Systems Programming specialization in the 4th year. My graduation thesis added an auto-configuration and network management capabilities to a open-source VPN solution: OpenVPN.
+
+    \item[Sep 2001 – Jun 2005]
+        \textbf{``Dragos Voda'' National College}, Campulung Moldovenesc - Informatics Class
+    \end{cvlist}
+
+    \begin{cvlist}{Skills}
+    \item[Programming]
+        C/C++ (POSIX programming, BSD sockets), Python, Bash, OOP
+
+    \item[Networking]
+        HTTP, FTP, RTP, SIP, TCP, UDP, IPv4/6, MPLS, Ethernet
+
+    \item[Databases]
+        MySQL, Oracle
+
+    \item[Version Control]  Perforce, svn, git
+    \item[Operating Systems]
+        GNU/Linux (Debian, Ubuntu), Windows
+    \end{cvlist}
+
+    \begin{cvlist}{Languages}
+    \item Romanian (mother tongue),  English (very good), French (medium)
+    \end{cvlist}
+
+    \cvplace{Dublin, Ireland}
+    \date{May 2014}
+\end{cv}
+\end{document}
