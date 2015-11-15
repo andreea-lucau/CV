@@ -6,7 +6,6 @@ CV Template and PDF
 
 Required packages:
 
-*   texlive
 *   tex-common
 *   texlive-latex-base
 *   texlive-latex-extra
